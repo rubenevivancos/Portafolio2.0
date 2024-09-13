@@ -15,65 +15,63 @@ import gitHub from '../../Images/gitHub.png';
 import mongoose from '../../Images/mongoose.png';
 import mongoDB from '../../Images/mongoDB.png';
 
-
 export default function Skills() {
-
-    return(
-        <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-            <Container>
-                <Row>
-                    <Col sm={3} className="d-flex align-items-center">
+    return (
+        <div className="bg-dark d-flex flex-column" style={{ minHeight: '100vh' }}>
+            <Container fluid className="py-3">
+                <Row className="h-100">
+                    <Col xs={12} md={3} className="d-flex flex-column align-items-center p-3">
                         <SideBarMenu />
                     </Col>
-                    <Col sm={9}>
-                        <div className="mb-5 d-flex justify-content-end">
-                            <h1 className="bg-danger text-white px-5 py-1 rounded w-50 text-center mb-5">
+                    <Col xs={12} md={9} className="d-flex flex-column">
+                        <div className="mb-5 d-flex justify-content-center">
+                            <h1 className="bg-danger text-white px-4 py-2 rounded w-75 text-center mb-5">
                                 Habilidades
                             </h1>
                         </div>
                         <div className="d-flex justify-content-center">
-                            <div className="w-75">
+                            <div className="w-100">
                                 <Row className="w-100">
-                                    <Col className="text-white d-flex flex-column justify-content-start">
-                                        <p className="mb-4">
-                                            <Image src={react} className="me-2" width="48" height="48"/>React <span className="text-danger"><BsCheck /></span>
+                                    <Col xs={12} sm={6} md={4} className="text-white d-flex flex-column justify-content-start mb-4">
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={react} className="me-2" width="48" height="48" /> React <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
-                                        <p className="mb-4">
-                                            <Image src={reduxToolkit} className="me-2 rounded" width="48" height="48"/>Redux-Toolkit <span className="text-danger"><BsCheck /></span>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={reduxToolkit} className="me-2 rounded" width="48" height="48" /> Redux-Toolkit <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
-                                        <p className="mb-4">
-                                            <Image src={sequelize} className="me-2" width="48" height="48"/>Sequelize <span className="text-danger"><BsCheck /></span>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={sequelize} className="me-2" width="48" height="48" /> Sequelize <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
-                                        <p className="mb-4">
-                                            <Image src={mongoDB} className="me-2 rounded" width="48" height="48"/>MongoDB <span className="text-danger"><BsCheck /></span>
-                                        </p>
-                                    </Col>
-                                    <Col className="text-white d-flex flex-column justify-content-start">
-                                        <p className="mb-4">
-                                            <Image src={reactBootstrap} className="me-2" width="48" height="48"/>React-Bootstrap <span className="text-danger"><BsCheck /></span>
-                                        </p>
-                                        <p className="mb-4">
-                                            <Image src={node} className="me-2" width="48" height="48"/>Node <span className="text-danger"><BsCheck /></span>
-                                        </p>
-                                        <p className="mb-4">
-                                            <Image src={postgreSQL} className="me-2" width="48" height="48"/>PostgreSQL <span className="text-danger"><BsCheck /></span>
-                                        </p>
-                                        <p className="mb-4">
-                                            <Image src={git} className="me-2" width="48" height="48"/>Git <span className="text-danger"><BsCheck /></span>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={mongoDB} className="me-2 rounded" width="48" height="48" /> MongoDB <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
                                     </Col>
-                                    <Col className="text-white d-flex flex-column justify-content-start">
-                                        <p className="mb-4">
-                                            <Image src={bootstrap} className="me-2" width="48" height="48"/>Bootstrap <span className="text-danger"><BsCheck /></span>
+                                    <Col xs={12} sm={6} md={4} className="text-white d-flex flex-column justify-content-start mb-4">
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={reactBootstrap} className="me-2" width="48" height="48" /> React-Bootstrap <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
-                                        <p className="mb-4">
-                                            <Image src={express} className="me-2 rounded" width="48" height="48"/>Express <span className="text-danger"><BsCheck /></span>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={node} className="me-2" width="48" height="48" /> Node <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
-                                        <p className="mb-4">
-                                            <Image src={mongoose} className="me-2" width="48" height="48"/>Mongoose <span className="text-danger"><BsCheck /></span>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={postgreSQL} className="me-2" width="48" height="48" /> PostgreSQL <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
-                                        <p className="mb-4">
-                                            <Image src={gitHub} className="me-2 rounded" width="48" height="48"/>GitHub <span className="text-danger"><BsCheck /></span>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={git} className="me-2" width="48" height="48" /> Git <span className="text-danger ms-2"><BsCheck /></span>
+                                        </p>
+                                    </Col>
+                                    <Col xs={12} sm={6} md={4} className="text-white d-flex flex-column justify-content-start mb-4">
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={bootstrap} className="me-2" width="48" height="48" /> Bootstrap <span className="text-danger ms-2"><BsCheck /></span>
+                                        </p>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={express} className="me-2 rounded" width="48" height="48" /> Express <span className="text-danger ms-2"><BsCheck /></span>
+                                        </p>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={mongoose} className="me-2" width="48" height="48" /> Mongoose <span className="text-danger ms-2"><BsCheck /></span>
+                                        </p>
+                                        <p className="d-flex align-items-center mb-3">
+                                            <Image src={gitHub} className="me-2 rounded" width="48" height="48" /> GitHub <span className="text-danger ms-2"><BsCheck /></span>
                                         </p>
                                     </Col>
                                 </Row>
@@ -83,5 +81,5 @@ export default function Skills() {
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
