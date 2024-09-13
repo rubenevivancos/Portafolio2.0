@@ -1,24 +1,22 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap'; 
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
 
-
 export default function Experience() {
-
-    return(
-        <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-            <Container>
-                <Row>
-                    <Col sm={3} className="d-flex align-items-center">
+    return (
+        <div className="bg-dark d-flex flex-column" style={{ minHeight: '100vh' }}>
+            <Container fluid className="flex-grow-1 py-3">
+                <Row className="h-100">
+                    <Col xs={12} md={3} className="d-flex flex-column align-items-center p-3">
                         <SideBarMenu />
                     </Col>
-                    <Col sm={9}>
-                        <div className="d-flex justify-content-end">
-                            <h1 className="bg-success text-white px-5 py-1 rounded w-50 text-center">
+                    <Col xs={12} md={9} className="d-flex flex-column">
+                        <div className="d-flex justify-content-center mb-4">
+                            <h1 className="bg-success text-white px-4 py-2 rounded w-75 text-center">
                                 Experiencia
                             </h1>
                         </div>
-                        <div className="mt-5 d-flex justify-content-center">
-                            <div className="w-75">
+                        <div className="d-flex justify-content-center">
+                            <div className="w-100 w-md-75">
                                 <Card className="mb-4 bg-dark text-white border-0">
                                     <Card.Body>
                                         <Card.Title className="d-flex justify-content-between">
@@ -29,7 +27,7 @@ export default function Experience() {
                                             <span>Programador Web</span><span className="ms-4">Lima-Perú (Presencial)</span>
                                         </Card.Text>
                                     </Card.Body>
-                                    <div className="border-bottom border-2 border-success w-75 "></div>
+                                    <div className="border-bottom border-2 border-success w-75"></div>
                                 </Card>
                                 <Card className="mb-4 bg-dark text-white border-0">
                                     <Card.Body>
@@ -41,7 +39,7 @@ export default function Experience() {
                                             <span>Programador Web</span><span className="ms-4">Lima-Perú (Presencial)</span>
                                         </Card.Text>
                                     </Card.Body>
-                                    <div className="border-bottom border-2 border-success w-75 "></div>
+                                    <div className="border-bottom border-2 border-success w-75"></div>
                                 </Card>
                                 <Card className="bg-dark text-white border-0">
                                     <Card.Body>
@@ -53,7 +51,7 @@ export default function Experience() {
                                             <span>Programador Web</span><span className="ms-4">Lima-Perú (Presencial)</span>
                                         </Card.Text>
                                     </Card.Body>
-                                    <div className="border-bottom border-2 border-success w-75 "></div>
+                                    <div className="border-bottom border-2 border-success w-75"></div>
                                 </Card>
                             </div>
                         </div>
@@ -61,5 +59,5 @@ export default function Experience() {
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
