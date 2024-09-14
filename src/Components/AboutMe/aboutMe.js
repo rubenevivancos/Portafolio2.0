@@ -1,14 +1,20 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
+import HamburguerMenu from '../HamburguerMenu/hamburguerMenu';
 
 export default function AboutMe() {
   return (
     <div className="bg-dark d-flex flex-column" style={{ height: '100vh' }}>
       <Container fluid className="flex-grow-1">
         <Row className="h-100">
-          <Col xs={12} md={3} className="d-flex flex-column align-items-center p-3">
+          {/* Sidebar para pantallas grandes */}
+          <Col lg={3} className="d-none d-lg-flex align-items-center">
             <SideBarMenu />
           </Col>
+
+          {/* Menú de hamburguesa para pantallas pequeñas */}
+          <HamburguerMenu />
+
           <Col xs={12} md={9} className="d-flex flex-column justify-content-center p-3">
             <div className="d-flex justify-content-center">
               <h1 className="bg-primary text-white px-5 py-1 rounded w-75 text-center">

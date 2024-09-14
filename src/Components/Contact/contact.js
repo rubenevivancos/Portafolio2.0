@@ -2,6 +2,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
+import HamburguerMenu from '../HamburguerMenu/hamburguerMenu';
 import gitHub from '../../Images/gitHub.png';
 import linkedin from '../../Images/linkedin.png';
 import mail from '../../Images/mail.png';
@@ -17,9 +18,14 @@ export default function Contact() {
         <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <Container>
                 <Row>
-                    <Col sm={3} className="d-flex align-items-center">
+                    {/* Sidebar para pantallas grandes */}
+                    <Col lg={3} className="d-none d-lg-flex align-items-center">
                         <SideBarMenu />
                     </Col>
+
+                    {/* Menú de hamburguesa para pantallas pequeñas */}
+                    <HamburguerMenu />
+                    
                     <Col sm={9}>
                         <div className="d-flex justify-content-end">
                             <h1 className="bg-info text-white px-5 py-1 mb-5 rounded w-50 text-center">

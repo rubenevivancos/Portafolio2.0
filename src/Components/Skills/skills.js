@@ -2,6 +2,7 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import { BsCheck } from 'react-icons/bs'; 
 
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
+import HamburguerMenu from '../HamburguerMenu/hamburguerMenu';
 import reactBootstrap from '../../Images/react-bootstrap.png';
 import bootstrap from '../../Images/bootstrap.png';
 import react from '../../Images/react.png';
@@ -20,9 +21,14 @@ export default function Skills() {
         <div className="bg-dark d-flex flex-column" style={{ minHeight: '100vh' }}>
             <Container fluid className="py-3">
                 <Row className="h-100">
-                    <Col xs={12} md={3} className="d-flex flex-column align-items-center p-3">
+                    {/* Sidebar para pantallas grandes */}
+                    <Col lg={3} className="d-none d-lg-flex align-items-center">
                         <SideBarMenu />
                     </Col>
+
+                    {/* Menú de hamburguesa para pantallas pequeñas */}
+                    <HamburguerMenu />
+
                     <Col xs={12} md={9} className="d-flex flex-column">
                         <div className="mb-5 d-flex justify-content-center">
                             <h1 className="bg-danger text-white px-4 py-2 rounded w-75 text-center mb-5">

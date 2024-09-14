@@ -1,14 +1,20 @@
 import { Container, Row, Col, Card } from 'react-bootstrap'; 
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
+import HamburguerMenu from '../HamburguerMenu/hamburguerMenu';
 
 export default function Experience() {
     return (
         <div className="bg-dark d-flex flex-column" style={{ minHeight: '100vh' }}>
             <Container fluid className="flex-grow-1 py-3">
                 <Row className="h-100">
-                    <Col xs={12} md={3} className="d-flex flex-column align-items-center p-3">
+                    {/* Sidebar para pantallas grandes */}
+                    <Col lg={3} className="d-none d-lg-flex align-items-center">
                         <SideBarMenu />
                     </Col>
+
+                    {/* Menú de hamburguesa para pantallas pequeñas */}
+                    <HamburguerMenu />
+
                     <Col xs={12} md={9} className="d-flex flex-column">
                         <div className="d-flex justify-content-center mb-4">
                             <h1 className="bg-success text-white px-4 py-2 rounded w-75 text-center">
