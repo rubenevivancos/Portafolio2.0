@@ -1,4 +1,4 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
 
 
@@ -8,10 +8,29 @@ export default function Home() {
         <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <Container>
                 <Row>
-                    <Col sm={3} className="d-flex align-items-center">
+                    {/* Sidebar para pantallas grandes */}
+                    <Col lg={3} className="d-none d-lg-flex align-items-center">
                         <SideBarMenu />
                     </Col>
-                    <Col sm={9}>
+
+                    {/* Menú de hamburguesa para pantallas pequeñas */}
+                    <Navbar bg="dark" variant="dark" expand="lg" className="d-lg-none w-100">
+                        <Container fluid>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="me-auto">
+                                    <Nav.Link href="#home">Sobre mí</Nav.Link>
+                                    <Nav.Link href="#about">Experiencia</Nav.Link>
+                                    <Nav.Link href="#contact">Habilidades</Nav.Link>
+                                    <Nav.Link href="#contact">Proyectos</Nav.Link>
+                                    <Nav.Link href="#contact">Curriculum</Nav.Link>
+                                    <Nav.Link href="#contact">Contacto</Nav.Link>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                    </Navbar>
+
+                    <Col sm={12} lg={9}>
                         <div className="d-flex justify-content-center">
                             <div className="w-75 d-flex flex-column">
                                 <div className="d-flex justify-content-center">
