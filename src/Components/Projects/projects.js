@@ -36,10 +36,16 @@ export default function Projects() {
                                 Proyectos
                             </h1>
                         </div>
-                        <div className="mt-5 d-flex justify-content-center overflow-auto" style={{ maxHeight: '80vh', scrollbarColor: '#6c757d #292e33' }}>
+
+                        <div className="mt-5 d-flex justify-content-center overflow-auto" style={{ maxHeight: '70vh', scrollbarColor: '#6c757d #292e33' }}>
                             <div className="w-75">
-                                <div className="mb-5 border border-secondary d-flex flex-row">
-                                        <div className="col-auto d-flex align-items-center justify-content-center p-3" style={{ width: '188px' }}>
+                                <div className="mb-5 border border-secondary d-flex flex-column flex-lg-row">
+                                        {/* Para pantallas grandes */}
+                                        <div className="col-auto d-flex align-items-center justify-content-center p-3 d-none d-lg-flex" style={{ width: '188px' }}>
+                                            <Image src={dogs} width="140" height="120"/>
+                                        </div>
+                                        {/* Para pantallas pequeñas y medianas */}
+                                        <div className="d-flex align-items-center justify-content-center p-3 d-lg-none" style={{ height: '100%' }}>
                                             <Image src={dogs} width="140" height="120"/>
                                         </div>
                                         <div>
@@ -126,10 +132,16 @@ export default function Projects() {
                                             </Card>
                                         </div>
                                 </div>
-                                <div className="mb-5 border border-secondary d-flex flex-row">
-                                        <div className="col-auto d-flex align-items-center justify-content-center p-3" style={{ width: '188px' }}>
+                                <div className="mb-5 border border-secondary d-flex flex-column flex-lg-row">
+                                        {/* Para pantallas grandes */}
+                                        <div className="col-auto d-flex align-items-center justify-content-center p-3 d-none d-lg-flex" style={{ width: '188px' }}>
                                             <Image src={bazarUniversal} width="100" height="120"/>
                                         </div>
+                                        {/* Para pantallas pequeñas y medianas */}
+                                        <div className="d-flex align-items-center justify-content-center p-3 d-lg-none" style={{ height: '100%' }}>
+                                            <Image src={bazarUniversal} width="100" height="120"/>
+                                        </div>
+
                                         <div>
                                             <Card className="bg-dark text-white border-0">
                                                 <Card.Body>
@@ -257,10 +269,16 @@ export default function Projects() {
                                             </Card>
                                         </div>
                                 </div>
-                                <div className="mb-5 border border-secondary d-flex flex-row">
-                                        <div className="col-auto d-flex align-items-center justify-content-center p-3" style={{ width: '188px' }}>
+                                <div className="mb-5 border border-secondary d-flex flex-column flex-lg-row">
+                                        {/* Para pantallas grandes */}
+                                        <div className="col-auto d-flex align-items-center justify-content-center p-3 d-none d-lg-flex" style={{ width: '188px' }}>
                                             <Image src={portafolio} width="140" height="50"/>
                                         </div>
+                                        {/* Para pantallas pequeñas y medianas */}
+                                        <div className="d-flex align-items-center justify-content-center p-3 d-lg-none" style={{ height: '100%' }}>
+                                            <Image src={portafolio} width="140" height="50"/>
+                                        </div>
+
                                         <div>
                                             <Card className="bg-dark text-white border-0">
                                                 <Card.Body>
