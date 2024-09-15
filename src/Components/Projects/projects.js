@@ -70,7 +70,7 @@ export default function Projects() {
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">Sequelize</span>
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">PostgreSQL</span>
                                                         </span>
-                                                        <span className="mb-4">
+                                                        <span className="mb-4 d-flex flex-column flex-lg-row align-items-start">
                                                             <Link className="pe-2 small text-white"
                                                                   to="#" 
                                                                   title="https://github.com/rubenevivancos/PI-Dogs-Henry_FrontEnd"
@@ -104,7 +104,7 @@ export default function Projects() {
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">Sequelize</span>
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">PostgreSQL</span>
                                                         </span>
-                                                        <span>
+                                                        <span className="d-flex flex-column flex-lg-row align-items-start">
                                                             <Link className="pe-2 small text-white"
                                                                   to="#" 
                                                                   title="https://github.com/rubenevivancos/PI_Dogs_2.0_FrontEnd"
@@ -164,7 +164,7 @@ export default function Projects() {
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">Node</span>
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">Express</span>
                                                         </span>
-                                                        <span className="mb-4">
+                                                        <span className="mb-4 d-flex flex-column flex-lg-row align-items-start">
                                                             <Link className="pe-2 small text-white"
                                                                   to="#" 
                                                                   title="https://github.com/rubenevivancos/BazarUniversal2.0_FrontEnd"
@@ -203,7 +203,7 @@ export default function Projects() {
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">Sequelize</span>
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">PostgreSQL</span>
                                                         </span>
-                                                        <span className="mb-4">
+                                                        <span className="mb-4 d-flex flex-column flex-lg-row align-items-start">
                                                             <Link className="pe-2 small text-white"
                                                                   to="#" 
                                                                   title="https://github.com/rubenevivancos/BazarUniversal3.0_FrontEnd"
@@ -241,7 +241,7 @@ export default function Projects() {
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">Mongoose</span>
                                                             <span className="bg-secondary rounded px-2 me-2 mb-2 small">MongoDB</span>
                                                         </span>
-                                                        <span>
+                                                        <span className="d-flex flex-column flex-lg-row align-items-start">
                                                             <Link className="pe-2 small text-white"
                                                                   to="#" 
                                                                   title="https://github.com/rubenevivancos/BazarUniversal4.0_FrontEnd"
