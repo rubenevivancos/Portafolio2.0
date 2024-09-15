@@ -26,7 +26,13 @@ export default function Projects() {
                     
                     <Col lg={9}>
                         <div className="mb-5 d-flex justify-content-end">
-                            <h1 className="bg-secondary text-white px-5 py-1 rounded w-75 text-center">
+                            {/* Para pantallas grandes */}
+                            <h1 className="bg-secondary text-white px-4 py-1 rounded w-50 text-center d-none d-lg-block">
+                                Proyectos
+                            </h1>
+
+                            {/* Para pantallas pequeñas y medianas */}
+                            <h1 className="bg-secondary text-white px-4 py-1 rounded w-75 text-center d-lg-none">
                                 Proyectos
                             </h1>
                         </div>

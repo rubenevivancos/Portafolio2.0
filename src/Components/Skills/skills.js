@@ -33,12 +33,19 @@ export default function Skills() {
 
                     <Col lg={9}>
                         <div className="mb-5 d-flex justify-content-end">
-                            <h1 className="bg-danger text-white px-4 py-2 rounded w-75 text-center mb-5">
+                            {/* Para pantallas grandes */}
+                            <h1 className="bg-danger text-white px-4 py-1 rounded w-50 text-center d-none d-lg-block">
+                                Habilidades
+                            </h1>
+
+                            {/* Para pantallas pequeñas y medianas */}
+                            <h1 className="bg-danger text-white px-4 py-1 rounded w-75 text-center d-lg-none">
                                 Habilidades
                             </h1>
                         </div>
+                        
                         <div className="d-flex justify-content-center">
-                            <div className="w-100">
+                            <div className="w-75">
                                 <Row className="w-100">
                                     <Col xs={12} sm={6} md={4} className="text-white d-flex flex-column justify-content-start mb-4">
                                         <p className="d-flex align-items-center mb-3">
