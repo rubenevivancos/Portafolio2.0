@@ -26,7 +26,7 @@ export default function Projects() {
                     
                     <Col lg={9}>
                         <div className="mb-5 d-flex justify-content-end">
-                            <h1 className="bg-secondary text-white px-5 py-1 rounded w-50 text-center">
+                            <h1 className="bg-secondary text-white px-5 py-1 rounded w-75 text-center">
                                 Proyectos
                             </h1>
                         </div>

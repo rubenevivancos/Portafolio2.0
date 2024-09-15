@@ -30,7 +30,7 @@ export default function Contact() {
                     
                     <Col sm={9}>
                         <div className="d-flex justify-content-end">
-                            <h1 className="bg-info text-white px-5 py-1 mb-5 rounded w-50 text-center">
+                            <h1 className="bg-info text-white px-5 py-1 mb-5 rounded w-75 text-center">
                                 Contacto
                             </h1>
                         </div>
