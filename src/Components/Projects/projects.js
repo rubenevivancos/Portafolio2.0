@@ -11,18 +11,20 @@ import dogs from '../../Images/dogs.png';
 export default function Projects() {
 
     return(
-        <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+        <div className="bg-dark d-flex justify-content-center align-items-center min-vh-100">
+        {/* Otra opcion usando Inline Style Condicional */}
+        {/* <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: isSmallScreen ? 'auto' : '100vh' }}> */}
             <Container>
                 <Row>
-                    {/* Sidebar para pantallas grandes */}
-                    <Col lg={3} className="d-none d-lg-flex align-items-center">
+                    <Col lg={3} className="d-flex align-items-center">
+                        {/* Sidebar para pantallas grandes */}
                         <SideBarMenu />
-                    </Col>
 
-                    {/* Menú de hamburguesa para pantallas pequeñas */}
-                    <HamburguerMenu />
+                        {/* Menú de hamburguesa para pantallas pequeñas */}
+                        <HamburguerMenu />
+                    </Col>
                     
-                    <Col sm={9}>
+                    <Col lg={9}>
                         <div className="mb-5 d-flex justify-content-end">
                             <h1 className="bg-secondary text-white px-5 py-1 rounded w-50 text-center">
                                 Proyectos

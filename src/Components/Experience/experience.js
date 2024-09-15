@@ -4,24 +4,26 @@ import HamburguerMenu from '../HamburguerMenu/hamburguerMenu';
 
 export default function Experience() {
     return (
-        <div className="bg-dark d-flex flex-column" style={{ minHeight: '100vh' }}>
-            <Container fluid className="flex-grow-1 py-3">
-                <Row className="h-100">
-                    {/* Sidebar para pantallas grandes */}
-                    <Col lg={3} className="d-none d-lg-flex align-items-center">
+        <div className="bg-dark d-flex justify-content-center align-items-center min-vh-100">
+        {/* Otra opcion usando Inline Style Condicional */}
+        {/* <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: isSmallScreen ? 'auto' : '100vh' }}> */}
+            <Container>
+                <Row>
+                    <Col lg={3} className="d-flex align-items-center">
+                        {/* Sidebar para pantallas grandes */}
                         <SideBarMenu />
+
+                        {/* Menú de hamburguesa para pantallas pequeñas */}
+                        <HamburguerMenu />
                     </Col>
 
-                    {/* Menú de hamburguesa para pantallas pequeñas */}
-                    <HamburguerMenu />
-
-                    <Col xs={12} md={9} className="d-flex flex-column">
-                        <div className="d-flex justify-content-center mb-4">
+                    <Col lg={9}>
+                        <div className="d-flex justify-content-end mb-4">
                             <h1 className="bg-success text-white px-4 py-2 rounded w-75 text-center">
                                 Experiencia
                             </h1>
                         </div>
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center text-white px-5 py-5 text-justify">
                             <div className="w-100 w-md-75">
                                 <Card className="mb-4 bg-dark text-white border-0">
                                     <Card.Body>

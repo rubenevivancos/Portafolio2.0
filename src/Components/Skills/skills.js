@@ -18,19 +18,21 @@ import mongoDB from '../../Images/mongoDB.png';
 
 export default function Skills() {
     return (
-        <div className="bg-dark d-flex flex-column" style={{ minHeight: '100vh' }}>
-            <Container fluid className="py-3">
-                <Row className="h-100">
-                    {/* Sidebar para pantallas grandes */}
-                    <Col lg={3} className="d-none d-lg-flex align-items-center">
+        <div className="bg-dark d-flex justify-content-center align-items-center min-vh-100">
+        {/* Otra opcion usando Inline Style Condicional */}
+        {/* <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: isSmallScreen ? 'auto' : '100vh' }}> */}
+            <Container>
+                <Row>
+                    <Col lg={3} className="d-flex align-items-center">
+                        {/* Sidebar para pantallas grandes */}
                         <SideBarMenu />
+
+                        {/* Menú de hamburguesa para pantallas pequeñas */}
+                        <HamburguerMenu />
                     </Col>
 
-                    {/* Menú de hamburguesa para pantallas pequeñas */}
-                    <HamburguerMenu />
-
-                    <Col xs={12} md={9} className="d-flex flex-column">
-                        <div className="mb-5 d-flex justify-content-center">
+                    <Col lg={9}>
+                        <div className="mb-5 d-flex justify-content-end">
                             <h1 className="bg-danger text-white px-4 py-2 rounded w-75 text-center mb-5">
                                 Habilidades
                             </h1>

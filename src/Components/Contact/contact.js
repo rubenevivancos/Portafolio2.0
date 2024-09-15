@@ -15,7 +15,9 @@ export default function Contact() {
     const email = 'rernestovsalazar@hotmail.com';
 
     return(
-        <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+        <div className="bg-dark d-flex justify-content-center align-items-center min-vh-100">
+        {/* Otra opcion usando Inline Style Condicional */}
+        {/* <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: isSmallScreen ? 'auto' : '100vh' }}> */}
             <Container>
                 <Row>
                     {/* Sidebar para pantallas grandes */}

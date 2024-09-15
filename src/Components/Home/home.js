@@ -1,4 +1,4 @@
-import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import SideBarMenu from '../SideBarMenu/sideBarMenu';
 import HamburguerMenu from '../HamburguerMenu/hamburguerMenu';
 
@@ -9,15 +9,15 @@ export default function Home() {
         <div className="bg-dark d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
             <Container>
                 <Row>
-                    {/* Sidebar para pantallas grandes */}
-                    <Col lg={3} className="d-none d-lg-flex align-items-center">
+                    <Col lg={3} className="d-flex align-items-center">
+                        {/* Sidebar para pantallas grandes */}
                         <SideBarMenu />
+
+                        {/* Menú de hamburguesa para pantallas pequeñas */}
+                        <HamburguerMenu />
                     </Col>
 
-                    {/* Menú de hamburguesa para pantallas pequeñas */}
-                    <HamburguerMenu />
-
-                    <Col sm={12} lg={9}>
+                    <Col lg={9}>
                         <div className="d-flex justify-content-center">
                             <div className="w-75 d-flex flex-column">
                                 <div className="d-flex justify-content-center">
